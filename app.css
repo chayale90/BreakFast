@@ -1,0 +1,204 @@
+body{
+    font-family: 'Arima', cursive;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    min-height: 80px;
+    background: rgba(246, 231, 216, 0.882) ;
+    position: sticky ;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 9px 5px rgba(198, 93, 123, 0.44), 5px 5px 9px 5px rgba(198, 93, 123, 0.44);
+}
+
+header .container {
+    min-height: inherit;
+}
+
+header .row {
+    min-height: inherit;
+}
+
+/* 
+header h1 {
+    font-size: 2em;
+} */
+
+header h1 a {
+    font-family: 'Arima', cursive;
+    color: rgb(135, 67, 86);
+    text-decoration: none;
+    transition: 600ms;
+}
+
+
+header h1 a:hover {
+    color: rgb(198, 93, 123);
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+
+}
+
+header h1 a .fa {
+    font-size: 1.1em;
+}
+
+
+header .nav li {
+    padding: 0 16px;
+    transition: 500ms;
+
+}
+
+header .nav li:hover {
+    transform: scale(1.3, 1.3);
+}
+
+header .nav a {
+    font-family: 'Arima', cursive;
+    text-decoration: none;
+    color: rgb(198, 93, 123);
+
+}
+
+header .nav a:hover {
+    color: rgb(135, 67, 86);
+    text-decoration: none;
+}
+
+header .nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: #F68989;
+    background: -moz-linear-gradient(left, #F68989 0%, #874356 100%);
+    background: -webkit-linear-gradient(left, #F68989 0%, #874356 100%);
+    background: linear-gradient(to right, #F68989 0%, #874356 100%);
+    transition: 1000ms;
+    margin: 0 auto;
+}
+
+/* במעבר עכבר יציג את הקו מתחת ללינק */
+header .nav a:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+header .burger {
+    font-size: 1.5em;
+    display: none;
+    color: rgb(135, 67, 86);
+    cursor: pointer;
+}
+
+
+footer {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 9px 5px rgba(198, 93, 123, 0.44), 5px 5px 9px 5px rgba(198, 93, 123, 0.44);
+    min-height: 150px;
+    background: rgb(246, 137, 137);
+}
+
+footer .lead {
+    color: white;
+}
+
+footer .lead p {
+    font-size: 0.9em;
+}
+
+footer .lead a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid white;
+}
+
+footer .lead a:last-of-type {
+    border-right: none;
+}
+
+footer .lead a:hover {
+    text-decoration: underline;
+    color: rgb(246, 231, 216);
+}
+
+footer h5 {
+    color: rgb(198, 93, 123);
+}
+
+footer .box3 a {
+    border: none;
+    padding: 0 12px;
+}
+
+footer .box3 a:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width:768px) {
+
+    header .nav {
+        min-height: 100vh;
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 40%;
+        padding: 0;
+        background: rgba(246, 137, 137, 0.887);
+        /* transform: translate(0,-130%); */
+        transform: translate(100%, 0);
+        transition: 600ms;
+        z-index: 10;
+        opacity: 0;
+    }
+
+    /* קלאס שהג'יי אס יוסיף שממקם אותו במקום הנכון */
+    header .nav_open {
+        opacity: 100%;
+        transform: translate(0, 0);
+    }
+
+    header ul {
+        display: block;
+    }
+
+    header .row li {
+        padding: 12px 0;
+        text-align: center;
+        transition: none;
+    }
+
+    header .row li:hover {
+        background: rgba(246, 231, 216, 0.686);
+        transform: none;
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 9px 5px rgba(198, 93, 123, 0.44), 5px 5px 9px 5px rgba(198, 93, 123, 0.44);
+    }
+
+    header .row a {
+        padding: 8px 0;
+        margin: 0 auto;
+        color: rgb(135, 67, 86);
+    }
+
+    header .row a:hover {
+        color: rgb(198, 93, 123);
+
+    }
+
+    header .nav a:hover::after {
+        width: 30%;
+    }
+
+    header .burger {
+        display: block;
+    }
+    
+}

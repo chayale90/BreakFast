@@ -1,0 +1,68 @@
+.bg_big {
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.bg_pic {
+    min-height: 700px;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-caption {
+    background: rgba(246, 137, 137, 0.594);
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+main {
+    min-height: 500px;
+    /* background: #F6E7D8;
+    background: -moz-linear-gradient(45deg, #F6E7D8 0%, #F68989 100%);
+    background: -webkit-linear-gradient(45deg, #F6E7D8 0%, #F68989 100%);
+    background: linear-gradient(45deg, #F6E7D8 0%, #F68989 100%); */
+    background: rgb(246, 231, 216);
+}
+
+
+
+main .card-img-top {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    border-radius: 20px;
+
+}
+main .card-img-top2:hover {
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
+main h2 {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 2px 2px 2px rgba(206, 77, 162, 0);
+    color: rgb(198, 93, 123);
+    font-family: 'Arima', cursive;
+
+}
+
+main h5 {
+    font-size: 1.5em;
+    color: rgb(135, 67, 86);
+    font-family: 'Arima', cursive;
+    text-shadow: 2px 6px 8px rgba(206, 89, 55, 0.34), 2px 6px 8px rgba(206, 89, 55, 0.34);
+
+}
+
+main .card-text {
+    font-size: 1em;
+}
+
+main a {
+    color: rgb(198, 93, 123);
+    text-decoration: none;
+}
+
+main a:hover {
+    color: rgb(135, 67, 86);
+
+}

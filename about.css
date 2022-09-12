@@ -1,0 +1,67 @@
+main {
+    min-height: 750px;
+    background-image: url(images/res.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* background: #F6E7D8;
+    background: -moz-linear-gradient(45deg, #F6E7D8 0%, #F68989 100%);
+    background: -webkit-linear-gradient(45deg, #F6E7D8 0%, #F68989 100%);
+    background: linear-gradient(45deg, #F6E7D8 0%, #F68989 100%); */
+}
+
+.container {
+    min-height: inherit;
+
+}
+
+.row {
+    min-height: inherit;
+}
+
+main .box {
+    border-radius: 50px;
+    background: rgba(246, 231, 216, 0.789);
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0)
+}
+
+main h3 {
+    color: rgb(135, 67, 86);
+
+    text-shadow: 0 -1px 4px #FFF, 0 -10px 20px #ff8000, 0 -18px 40px #F00, 2px 2px 2px rgba(206, 89, 55, 0);
+    font-family: 'Arima', cursive;
+    /* font-weight: bold; */
+
+}
+
+main img {
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(246, 231, 216, 0);
+}
+
+main p {
+    color: rgb(135, 67, 86);
+    /* font-weight: bold; */
+    /* font-size: 1.2em; */
+    /* font-family: 'Arima', cursive; */
+}
+
+main .row .box button {
+    background: rgb(135, 67, 86);
+    color: rgb(246, 231, 216);
+    border: none;
+}
+
+main .row .box button:hover {
+    border: none;
+    color: rgb(246, 231, 216);
+    background: rgb(198, 93, 123);
+}
+
+@media (max-width:768px) {
+    main {
+        background-attachment: scroll;
+    }
+}

@@ -1,0 +1,69 @@
+.light_box{
+  /* גורם לדיב לעקוב אחרינו */
+  position: fixed;
+  top:0;
+  left:0;
+  /* רוחב וגובה בדיוק של החלון */
+  width:100%;
+  height: 100%;
+  /* רקע שחור שקוף */
+  background: rgba(246, 137, 137, 0.65);
+  /* שתמיג יהיה הכי קדימה */
+  z-index: 999;
+  /* כדי לגרום לבוקס הפנימי להיות ממוקם באמצע */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+  box-sizing: border-box;
+
+}
+
+/* .inside_box - הריבוע הלבן שהתמונה ,טקסט וכפתור
+נמצאים בו */
+.light_box .inside_box{
+  background:rgb(246, 231, 216); 
+  padding:8px;
+  max-width: 600px;
+  width:100%;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.light_box .inside_box img{
+  max-width: 600px;
+  width:98%;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.light_box .inside_box p{
+  color:rgb(198, 93, 123);
+  font-size: 2em;
+  font-family: 'Arima', cursive;
+  font-weight: bold;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, -31px -13px 4px rgba(206,89,55,0);
+}
+
+
+.light_box .inside_box button{
+  background: rgba(135, 67, 86, 0.984);
+  color: rgb(246, 231, 216);
+    border:none;
+  padding:12px 24px;
+  border-radius: 12px;
+}
+
+
+.light_box .inside_box button:hover{
+  color: rgb(246, 231, 216);
+  background: rgb(198, 93, 123);
+/* 
+  background: #F68989;
+  background: -moz-linear-gradient(left, #F68989 0%, #874356 100%);
+  background: -webkit-linear-gradient(left, #F68989 0%, #874356 100%);
+  background: linear-gradient(to right, #F68989 0%, #874356 100%); */
+
+}
+

@@ -1,0 +1,135 @@
+main {
+    min-height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(images/contact1.jpg);
+}
+
+.container {
+    min-height: inherit;
+}
+
+.row {
+    min-height: inherit;
+}
+
+.div_left {
+    min-height: inherit;
+    box-shadow: 0px 10px 10px -7px #000000, 5px 5px 9px 5px rgba(198, 93, 123, 0.44), 5px 5px 9px 5px rgba(198, 93, 123, 0.44);
+}
+
+.div_right {
+    min-height: inherit;
+    box-shadow: 0px 10px 10px -7px #000000, 5px 5px 9px 5px rgba(198, 93, 123, 0.44), 5px 5px 9px 5px rgba(198, 93, 123, 0.44);
+
+}
+
+main .main_div {
+    min-height: 300px;
+    /* background:  rgb(198, 93, 123); */
+    border-radius: 20px;
+
+
+}
+
+
+main .div_left {
+    border-radius: 20px 0 0 20px;
+    background: rgba(246, 231, 216, 0.915);
+}
+
+main h4 {
+    color: white;
+    text-shadow: 0 -1px 4px #FFF, 0 -18px 40px #F00, 2px 2px 2px rgba(206, 89, 55, 0);
+    font-family: 'Arima', cursive;
+    font-weight: lighter;
+    font-size: 1.9em;
+}
+
+main label {
+    font-size: 0.9em;
+    color: rgb(246, 231, 216);
+}
+
+
+main .input {
+    border-radius: 40px;
+    border: 3px solid rgb(246, 231, 216);
+    color: rgb(246, 231, 216);
+    background: transparent;
+    outline-color: rgb(135, 67, 86);
+}
+
+main .textarea {
+    border-radius: 20px;
+    border: 3px solid rgb(246, 231, 216);
+    color: rgb(246, 231, 216);
+    background: transparent;
+    height: 100px;
+    outline-color: rgb(135, 67, 86);
+}
+
+
+main .textarea::placeholder {
+    color: rgba(246, 231, 216, 0.541);
+    opacity: 1;
+}
+
+
+main .row button {
+    background: rgb(246, 231, 216);
+    border-radius: 40px;
+    color: rgb(135, 67, 86);
+    border: none;
+    transition: 200ms;
+    border: solid rgb(246, 231, 216) 2px;
+}
+
+main .row button:hover {
+    background: transparent;
+    border: solid rgb(246, 231, 216) 2px;
+    color: rgb(246, 231, 216);
+}
+
+
+
+
+
+
+main .div_right {
+    border-radius: 0 20px 20px 0;
+    background: rgb(135, 67, 86);
+}
+
+
+main .left_h4 {
+    color: rgb(135, 67, 86);
+    font-weight: bold;
+}
+
+main .details {
+    color: rgb(135, 67, 86);
+    font-weight: lighter;
+    font-size: 1.3em;
+}
+
+main .details p a {
+    color: rgb(135, 67, 86);
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+    main {
+        background-attachment: scroll;
+    }
+    
+    main .div_left {
+        border-radius: 20px 20px 0 0;
+    }
+
+    main .div_right {
+        border-radius: 0 0 20px 20px;
+    }
+}
+
